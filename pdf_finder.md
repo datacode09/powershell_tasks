@@ -1,6 +1,6 @@
 To find a PDF file with "hadoop" in the title or inside using PowerShell, you can use the following command:
 
-```Get-ChildItem -Path C:\path\to\search -Recurse -Include *.pdf | Where-Object { $_.Name -match 'hadoop' -or (Get-Content $_.FullName -Raw) -match 'hadoop' }
+Get-ChildItem -Path C:\path\to\search -Recurse -Include *.pdf | Where-Object { $_.Name -match 'hadoop' -or (Get-Content $_.FullName -Raw) -match 'hadoop' }
 
 
 - Here's what each part of the command does:
